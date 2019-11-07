@@ -25,4 +25,3 @@ end
 batch_badge_creator(attendees).each {|message| puts message}
 assign_rooms(attendees).each {|room| puts room}
 end
-
