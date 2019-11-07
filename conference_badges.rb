@@ -21,7 +21,8 @@ def assign_rooms(array_of_names)
   return welcome_messages
 end
 
-def printer(batch_badge_creator,assign_rooms)
-  puts batch_badge_creator
-  puts assign_rooms
+  def printer(attendees)
+batch_badge_creator(attendees).each {|message| puts message}
+assign_rooms(attendees).each {|room| puts room}
+end
 end
